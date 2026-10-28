@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xCode — The X# editor for Windows</title>
+<meta name="description" content="xCode is a focused desktop editor for the X# language. Run scripts instantly and build a whole project into one self-contained Windows executable.">
+<meta name="theme-color" content="#050f0c">
+<meta name="color-scheme" content="dark">
+<!-- Update these two values with every release; the page uses them when /api/release is not available. -->
+<meta name="xcode-version" content="0.1.0">
+<meta name="xcode-sha256" content="52dbd629f3a9348a4631c07d50b15ba486bd303aa9729f758e75fcff91fdf1af">
+<meta property="og:type" content="website">
+<meta property="og:title" content="xCode — The X# editor for Windows">
+<meta property="og:description" content="Write X#. Run it. Ship one .exe. A focused editor with instant run, syntax highlighting and single-file builds.">
+<meta property="og:image" content="https://xxmomentum12.github.io/xcode-site/assets/screenshot.png">
+<meta property="og:url" content="https://xxmomentum12.github.io/xcode-site/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon.png" type="image/png">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="xCode, back to top">
+      <img src="assets/icon.png" width="32" height="32" alt="" class="brand-icon">
+      <span class="brand-name"><span class="brand-accent">x</span>Code</span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#build">Build</a>
+      <a href="#install">Install</a>
+      <a href="#cli">Silent install</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-small" href="#download">Download</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> X# editor for Windows</p>
+        <h1>Write X#. Run it. Ship <span class="accent">one .exe</span>.</h1>
+        <p class="lede">
+          xCode is a focused desktop editor for the X# language. Run scripts instantly,
+          package a whole project into a single Windows executable, and hand it to
+          anyone — no runtime required.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#download">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+            </svg>
+            Download for Windows
+            <span class="btn-meta" data-size="installer">132 MB</span>
+          </a>
+          <a class="btn btn-ghost" href="#features">Explore features</a>
+        </div>
+        <p class="hero-note">
+          Windows 10 / 11 · 64-bit · Free and open source (MIT)
+        </p>
+      </div>
+
+      <figure class="hero-visual">
+        <img src="assets/screenshot.png?v=2" width="1083" height="655"
+             alt="The xCode editor window with a script and the output panel">
+        <figcaption>Editor and output panel, side by side.</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <dl class="meta-strip">
+        <div>
+          <dt>Version</dt>
+          <dd data-version>0.1.0</dd>
+        </div>
+        <div>
+          <dt>Installer</dt>
+          <dd><span data-size="installer">132 MB</span> · single file</dd>
+        </div>
+        <div>
+          <dt>Platform</dt>
+          <dd>Windows 10 / 11 · x64</dd>
+        </div>
+        <div>
+          <dt>License</dt>
+          <dd>MIT</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span> Features</p>
+        <h2>Small editor, complete loop.</h2>
+        <p class="section-sub">
+          Everything from the first line to a finished executable — and nothing you
+          have to install to get there.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 4.5v15l12-7.5-12-7.5Z"/>
+            </svg>
+          </span>
+          <h3>Run with F5</h3>
+          <p>Execute the current script in place. Output, errors and the exit code land in the built-in panel.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/>
+              <path d="m4 7.5 8 4.5 8-4.5M12 12v9"/>
+            </svg>
+          </span>
+          <h3>Build one .exe</h3>
+          <p>The Build command embeds the X# interpreter, launcher, assets and icon into a single file.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/>
+            </svg>
+          </span>
+          <h3>Whole-folder projects</h3>
+          <p>Add two lines of project properties and Build bundles the folder with its subfolders — art, sounds, data, everything.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/>
+            </svg>
+          </span>
+          <h3>Readable syntax</h3>
+          <p>Keywords, strings and module calls are highlighted, so X# stays easy to scan while you work.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/>
+            </svg>
+          </span>
+          <h3>Examples that run</h3>
+          <p>From loops and functions to a 2D platformer and a 3D FPS demo — open one, press F5, play.</p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.5 8.5 16 19 5.5"/>
+              <path d="M4 20h16"/>
+            </svg>
+          </span>
+          <h3>No network, no telemetry</h3>
+          <p>The editor never phones home. Write, run and build with the network unplugged.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="build">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span> Build</p>
+        <h2>From project folder to one executable.</h2>
+        <p class="section-sub">
+          Mark the folder as a project, pick an icon, then hit Build. xCode writes one
+          self-contained .exe — no installer, no runtime, no side files.
+        </p>
+      </div>
+
+      <div class="build-grid">
+        <div class="code-pane reveal">
+          <div class="code-head">
+            <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="code-name">game.X#</span>
+            <span class="code-tag">X#</span>
+          </div>
+<pre class="code"><code><span class="tok-kw">import</span> graphics
+<span class="tok-kw">import</span> game
+
+graphics.window(<span class="tok-num">800</span>, <span class="tok-num">600</span>, <span class="tok-str">"Neon Labyrinth"</span>)
+graphics.addimage(<span class="tok-str">"hero"</span>)
+game.addplayer(<span class="tok-str">"hero"</span>)
+game.addphysics(<span class="tok-str">"hero"</span>)
+game.player.speed <span class="tok-op">=</span> <span class="tok-num">5</span>
+
+game.player.controls
+   {
+      left  <span class="tok-op">=</span> game.input.key(<span class="tok-str">"a"</span>)
+      right <span class="tok-op">=</span> game.input.key(<span class="tok-str">"d"</span>)
+      jump  <span class="tok-op">=</span> game.input.key(<span class="tok-str">"space"</span>)
+   }
+
+<span class="tok-kw">while</span> <span class="tok-kw">do</span> <span class="tok-kw">for</span> (inf)
+   graphics.clear()
+   graphics.text(<span class="tok-str">"A / D move, SPACE jump"</span>, <span class="tok-num">20</span>, <span class="tok-num">20</span>)
+   graphics.update()
+   time.wait(<span class="tok-num">0.016</span>)
+<span class="tok-kw">endwhile</span></code></pre>
+        </div>
+
+        <div class="build-side">
+          <div class="code-pane reveal">
+            <div class="code-head">
+              <span class="code-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="code-name">project properties</span>
+              <span class="code-tag">asp</span>
+            </div>
+<pre class="code"><code><span class="tok-com">-- asp = app setup properties</span>
+asp.connect(exe)             <span class="tok-com">-- package this folder</span>
+asp.select.icon(<span class="tok-str">"icon.ico"</span>)  <span class="tok-com">-- app icon</span></code></pre>
+          </div>
+
+          <ul class="check-list reveal">
+            <li><strong>One format:</strong> <code>exe</code> — nothing else to choose.</li>
+            <li><strong>Folder-aware:</strong> <code>asp.connect(exe)</code> ships the project folder and its subfolders.</li>
+            <li><strong>Custom icon:</strong> <code>.ico</code> or <code>.png</code> up to 256×256. Skip it to keep the default.</li>
+            <li><strong>Runs anywhere:</strong> the executable carries its own interpreter.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="install">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span> Install</p>
+        <h2>Three steps, about a minute.</h2>
+        <p class="section-sub">
+          A per-user install with no administrator detour — unless Windows needs to add
+          the .NET Framework first.
+        </p>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-number">1</span>
+          <h3>Download the installer</h3>
+          <p>A single <span data-size="installer">132 MB</span> <code>.exe</code>. Nothing else to fetch.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-number">2</span>
+          <h3>Choose a scope</h3>
+          <p><strong>Recommended</strong> adds optional Python, Node.js and .NET tools. <strong>xCode only</strong> installs the editor — Build works without them.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-number">3</span>
+          <h3>Build something</h3>
+          <p>Launch xCode, open an example and press F5. Use <strong>File → Build…</strong> when you are ready to ship.</p>
+        </li>
+      </ol>
+
+      <div class="callout reveal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 11v5M12 8h.01"/>
+        </svg>
+        <p>
+          Installs to <code>%LOCALAPPDATA%\Programs\xCode</code> and adds xCode,
+          source files and an uninstaller to the Start menu. Administrator rights are
+          only requested if .NET Framework 4.8 must be installed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-download" id="download">
+    <div class="wrap">
+      <div class="download-card reveal">
+        <div class="download-main">
+          <p class="eyebrow"><span class="dot"></span> Download</p>
+          <h2>xCode <span data-version>0.1.0</span> for Windows</h2>
+          <p class="download-sub">Windows 10 or 11 · 64-bit · English interface</p>
+
+          <dl class="file-facts">
+            <div>
+              <dt>File</dt>
+              <dd><code>xCodeSetup.exe</code></dd>
+            </div>
+            <div>
+              <dt>Size</dt>
+              <dd><span data-size="installer">132 MB</span></dd>
+            </div>
+            <div class="file-facts-wide">
+              <dt>SHA-256</dt>
+              <dd class="hash-row">
+                <code id="sha-value" class="hash">Calculated by the local server…</code>
+                <button class="copy" type="button" data-copy-target="sha-value" hidden>Copy</button>
+              </dd>
+            </div>
+          </dl>
+
+          <p class="verify">
+            Verify before running:
+            <code>Get-FileHash .\xCodeSetup.exe -Algorithm SHA256</code>
+          </p>
+        </div>
+
+        <div class="download-actions">
+          <a class="btn btn-primary btn-large" id="download-installer" href="https://github.com/xxmomentum12/xcode-site/releases/latest/download/xCodeSetup.exe" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+            </svg>
+            Download xCodeSetup.exe
+          </a>
+          <p class="download-alt">
+            No installation?
+            <a href="https://github.com/xxmomentum12/xcode-site/releases/latest/download/xCode-portable.exe" id="download-portable" rel="noopener">
+              Get the portable .exe <span data-size="portable">118 MB</span>
+            </a>
+          </p>
+
+          <div class="note note-warn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 4 2.5 20h19L12 4Z"/>
+              <path d="M12 10v4M12 17h.01"/>
+            </svg>
+            <p>
+              This build is not code-signed, so Windows SmartScreen may warn on first
+              run. Choose <strong>More info → Run anyway</strong>, or check the SHA-256
+              above.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="cli">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span> Silent install</p>
+        <h2>Install without clicking.</h2>
+        <p class="section-sub">
+          The installer accepts flags, which makes it easy to script a lab machine or a
+          fresh VM.
+        </p>
+      </div>
+
+      <div class="cli-grid">
+        <div class="cli-list reveal">
+          <div class="cli-row">
+            <div>
+              <span class="cli-label">Default silent install</span>
+              <code>xCodeSetup.exe --silent</code>
+            </div>
+            <button class="copy" type="button" data-copy="xCodeSetup.exe --silent">Copy</button>
+          </div>
+          <div class="cli-row">
+            <div>
+              <span class="cli-label">Custom folder</span>
+              <code>xCodeSetup.exe --silent --dir="D:\Apps\xCode"</code>
+            </div>
+            <button class="copy" type="button" data-copy="xCodeSetup.exe --silent --dir=&quot;D:\Apps\xCode&quot;">Copy</button>
+          </div>
+          <div class="cli-row">
+            <div>
+              <span class="cli-label">Editor only, no tools</span>
+              <code>xCodeSetup.exe --silent --no-tools</code>
+            </div>
+            <button class="copy" type="button" data-copy="xCodeSetup.exe --silent --no-tools">Copy</button>
+          </div>
+          <div class="cli-row">
+            <div>
+              <span class="cli-label">Bundled portable tools</span>
+              <code>xCodeSetup.exe --silent --portable-tools</code>
+            </div>
+            <button class="copy" type="button" data-copy="xCodeSetup.exe --silent --portable-tools">Copy</button>
+          </div>
+          <div class="cli-row">
+            <div>
+              <span class="cli-label">Shortcut and launch</span>
+              <code>xCodeSetup.exe --silent --desktop --launch</code>
+            </div>
+            <button class="copy" type="button" data-copy="xCodeSetup.exe --silent --desktop --launch">Copy</button>
+          </div>
+          <div class="cli-row">
+            <div>
+              <span class="cli-label">Uninstall quietly</span>
+              <code>uninstall.exe --quiet</code>
+            </div>
+            <button class="copy" type="button" data-copy="uninstall.exe --quiet">Copy</button>
+          </div>
+        </div>
+
+        <aside class="flags reveal" aria-labelledby="flags-title">
+          <h3 id="flags-title">All flags</h3>
+          <dl class="flag-list">
+            <div><dt><code>--silent</code></dt><dd>No UI; log to <code>%TEMP%</code>.</dd></div>
+            <div><dt><code>--dir=&lt;path&gt;</code></dt><dd>Install location.</dd></div>
+            <div><dt><code>--no-tools</code></dt><dd>Skip Python, Node.js and .NET checks.</dd></div>
+            <div><dt><code>--no-source</code></dt><dd>Do not install developer sources.</dd></div>
+            <div><dt><code>--portable-tools</code></dt><dd>Always download local tools.</dd></div>
+            <div><dt><code>--desktop</code></dt><dd>Add a desktop shortcut.</dd></div>
+            <div><dt><code>--launch</code></dt><dd>Start xCode when done.</dd></div>
+          </dl>
+          <p class="flags-note">
+            Exit code <code>0</code> means success. Uninstall logs live in
+            <code>%TEMP%\xCodeUninstall.log</code>.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="wrap wrap-narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dot"></span> FAQ</p>
+        <h2>Questions, answered.</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>Windows says “Windows protected your PC”. Is this safe?</summary>
+          <p>
+            The executable is not code-signed, so SmartScreen treats a fresh download
+            as unknown. Choose <strong>More info</strong> and then
+            <strong>Run anyway</strong>. If you want certainty, compare the SHA-256
+            shown above with your local file:
+            <code>Get-FileHash .\xCodeSetup.exe -Algorithm SHA256</code>.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do I need Python or Node.js to use xCode?</summary>
+          <p>
+            No. The editor can run and build X# projects on its own. Python, PyInstaller,
+            Node.js and .NET are only needed to rebuild xCode from source — that is what
+            the <strong>Recommended</strong> scope and the portable tools are for.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does Build need an internet connection?</summary>
+          <p>
+            No. Everything required to build an executable ships inside the editor, and
+            the editor itself never makes network requests.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Where does it install, and how do I remove it?</summary>
+          <p>
+            By default to <code>%LOCALAPPDATA%\Programs\xCode</code>. Uninstall from
+            <strong>Settings → Apps → xCode</strong>, from the Start menu
+            (<strong>xCode → Uninstall</strong>), or run
+            <code>uninstall.exe --quiet</code>. All files, shortcuts, registry entries
+            and PATH additions are removed.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I install it for every user on the PC?</summary>
+          <p>
+            xCode installs per user, by design, so it never needs elevation. Administrator
+            rights are only requested when the .NET Framework 4.8 installer has to run.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is there a portable version?</summary>
+          <p>
+            Yes. The portable executable runs without installing anything — useful for a
+            USB stick. Get it from the download section.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What exactly ends up inside a built executable?</summary>
+          <p>
+            The X# interpreter, the Windows launcher, your project files and the icon you
+            chose. With <code>asp.connect(exe)</code> the whole project folder and its
+            subfolders are included, so images, sounds and data files travel with the game.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What is X#?</summary>
+          <p>
+            X# (X Sharp) is a small interpreted language with <code>.X#</code> source
+            files and built-in modules for console output, files, graphics, game physics,
+            sound and math. It is designed to be readable and to put a playable window on
+            screen in a few lines.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <img src="assets/icon.png" width="28" height="28" alt="" class="brand-icon">
+        <span class="brand-name"><span class="brand-accent">x</span>Code</span>
+      </a>
+      <p>A focused editor for the X# language.</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Product">
+      <h3>Product</h3>
+      <a href="#features">Features</a>
+      <a href="#build">Build</a>
+      <a href="#download">Download</a>
+    </nav>
+
+    <nav class="footer-col" aria-label="Install">
+      <h3>Install</h3>
+      <a href="#install">Getting started</a>
+      <a href="#cli">Silent flags</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="footer-col">
+      <h3>Release</h3>
+      <p class="footer-meta">Version <span data-version>0.1.0</span></p>
+      <p class="footer-meta">Windows 10 / 11 · x64</p>
+      <p class="footer-meta">MIT License</p>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© <span id="year">2026</span> X# · xCode</p>
+    <p>Built for Windows. No accounts, no telemetry.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
