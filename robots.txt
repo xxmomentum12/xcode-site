@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xxmomentum12.github.io/xcode-site/sitemap.xml
