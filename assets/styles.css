@@ -534,6 +534,106 @@ pre code {
   font-size: 15px;
 }
 
+/* ---------- Plugins ---------- */
+
+.plugin-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: clamp(28px, 5vw, 64px);
+  padding: clamp(26px, 4vw, 42px);
+  border: 1px solid rgba(99, 230, 164, 0.25);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(50% 100% at 100% 0%, rgba(56, 214, 196, 0.12), transparent 70%),
+    linear-gradient(180deg, rgba(13, 36, 30, 0.92), rgba(7, 21, 18, 0.95));
+  box-shadow: var(--shadow);
+}
+
+.plugin-title-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.plugin-mark {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 15px;
+  color: var(--accent-ink);
+  background: linear-gradient(145deg, var(--accent), var(--teal));
+  font-size: 28px;
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(61, 220, 138, 0.18);
+}
+
+.plugin-eyebrow {
+  margin: 0 0 5px;
+  font-size: 10.5px;
+}
+
+.plugin-title-row h3 {
+  font-size: 25px;
+}
+
+.plugin-description {
+  max-width: 54em;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.plugin-features {
+  display: grid;
+  gap: 9px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+  color: #c4ddcf;
+  font-size: 14px;
+}
+
+.plugin-features li::before {
+  content: "✓";
+  margin-right: 10px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.plugin-card-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  border-left: 1px solid var(--border);
+  padding-left: clamp(24px, 4vw, 46px);
+}
+
+.plugin-install {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.plugin-install strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.plugin-install ol {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding-left: 19px;
+}
+
+.plugin-version {
+  color: var(--muted-dim);
+  font-size: 11.5px;
+}
+
 /* ---------- Build / code ---------- */
 
 .build-grid {
@@ -1277,6 +1377,16 @@ pre code {
 
   .feature-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .plugin-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .plugin-card-side {
+    border-left: 0;
+    border-top: 1px solid var(--border);
+    padding: 22px 0 0;
   }
 
   .file-facts {
